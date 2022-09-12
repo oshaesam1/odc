@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:odc/presentation/screeens/splash/splash_screen.dart';
+import 'package:odc/presentation/styles/colors.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,6 +17,15 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'ODC',
       theme: ThemeData(
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ButtonStyle(backgroundColor: MaterialStateProperty.all(primaryColor))
+        ),
+        outlinedButtonTheme:OutlinedButtonThemeData(
+          style: OutlinedButton.styleFrom(
+            primary: primaryColor,
+            side: const BorderSide(color: primaryColor),
+          )
+        ),
         backgroundColor: Colors.teal,
         primarySwatch: Colors.blue,
       ),

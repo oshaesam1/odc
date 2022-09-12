@@ -3,7 +3,7 @@ import 'package:odc/presentation/styles/colors.dart';
 import 'package:odc/presentation/widgets/custom_text_form_field.dart';
 
 class LoginScreen extends StatelessWidget {
-   LoginScreen({Key? key}) : super(key: key);
+  LoginScreen({Key? key}) : super(key: key);
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
 
@@ -25,7 +25,9 @@ class LoginScreen extends StatelessWidget {
                 fit: BoxFit.cover,
               ),
             ),
-            SizedBox(height: size.height/30,),
+            SizedBox(
+              height: size.height / 30,
+            ),
             Row(
               children: const [
                 Text(
@@ -41,7 +43,9 @@ class LoginScreen extends StatelessWidget {
               hintText: 'Email',
               controller: emailController,
             ),
-            SizedBox(height: size.height/30,),
+            SizedBox(
+              height: size.height / 30,
+            ),
             CustomTextFormField(
               hintText: 'Password',
               controller: passwordController,
@@ -50,14 +54,50 @@ class LoginScreen extends StatelessWidget {
               height: size.height / 30,
             ),
             Row(
-              children: const [
-                Text(
-                  'Forget password?',
-                  style: TextStyle(color: primaryColor,fontSize: 20,decoration: TextDecoration.underline),
-                )
+              children: [
+                TextButton(
+                    onPressed: () {},
+                    child: const Text(
+                      'Forget password?',
+                      style: TextStyle(
+                          color: primaryColor,
+                          fontSize: 20,
+                          decoration: TextDecoration.underline),
+                    ))
               ],
             ),
-            
+            SizedBox(
+
+              width: double.infinity,
+              child: ElevatedButton(onPressed: (){}, child:  const Text(
+                'Login',
+              ),),
+            ),
+            SizedBox(
+              height: size.height / 30,
+            ),
+            Row(
+              children: [
+                const Expanded(
+                  child: Divider(
+                    color: Colors.grey,
+                  ),
+                ),
+                Padding(
+                  padding:  EdgeInsets.symmetric(horizontal: size.width/50),
+                  child: const Text('OR'),
+                ),
+                const Expanded(
+                  child: Divider(
+                    color: Colors.grey,
+                  ),
+                ),
+              ],
+            ),
+            OutlinedButton(onPressed: (){}, child: const Text(
+              'Sign Up',
+            ),)
+
           ],
         ),
       ),

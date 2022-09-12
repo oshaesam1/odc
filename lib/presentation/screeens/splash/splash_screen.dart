@@ -37,7 +37,7 @@ class SplashScreen extends StatelessWidget
             child: LinearPercentIndicator(
               animation: true,
               lineHeight: 7.0,
-              animationDuration: 7000,
+              animationDuration: 2000,
               percent: 1,
               barRadius: const Radius.circular(50),
               progressColor: primaryColor,
