@@ -39,6 +39,7 @@ class HomeScreen extends StatelessWidget {
             fit: BoxFit.cover,
           ),
         ),
+
         // GridView.builder(
         //   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
         //       crossAxisCount: 2, mainAxisSpacing: 5, childAspectRatio: 3 / 2),
