@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:odc/presentation/constants/app_assets.dart';
+import 'package:odc/presentation/screeens/app_layout/app_layout.dart';
 import 'package:odc/presentation/screeens/home/home_screen.dart';
 import 'package:odc/presentation/screeens/signup/signup_screen.dart';
 import 'package:odc/presentation/styles/colors.dart';
@@ -76,7 +77,7 @@ class LoginScreen extends StatelessWidget {
               Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => HomeScreen(),
+                    builder: (context) => AppLayout(),
                   ));
             },
             child: const Text(
