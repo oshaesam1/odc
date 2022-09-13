@@ -5,10 +5,11 @@ class SettingsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Text('Settings Screen'),
+    return Scaffold(body: ListView.builder(
+      itemBuilder: (context, index) => ListTile(
+
       ),
-    );
+
+    ));
   }
 }

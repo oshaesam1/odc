@@ -11,6 +11,7 @@ class EventsScreen extends StatelessWidget {
       child: Scaffold(
 
         body: SfCalendar(
+
           selectionDecoration: const BoxDecoration(color: transparent),
           monthViewSettings: const MonthViewSettings(
             appointmentDisplayMode: MonthAppointmentDisplayMode.appointment,
