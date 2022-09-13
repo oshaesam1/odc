@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:odc/presentation/constants/app_assets.dart';
 import 'package:odc/presentation/constants/constants.dart';
 import 'package:odc/presentation/screeens/home/home_screen.dart';
 import 'package:odc/presentation/screeens/login/login_screen.dart';
@@ -24,7 +25,7 @@ class SplashScreen extends StatelessWidget
 
           //img logo
           Image.asset(
-            'assets/images/logo.png',
+            odcImagePng,
             height: MediaQuery.of(context).size.height / 11,
             width: MediaQuery.of(context).size.width / 1.5,
             fit: BoxFit.cover,
