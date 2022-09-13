@@ -38,6 +38,7 @@ dependencies:
   bloc: ^8.1.0
   flutter_svg: ^1.1.5
   bottom_navy_bar: ^6.0.0
+  syncfusion_flutter_calendar: ^20.2.49
 
 
 dev_dependencies:

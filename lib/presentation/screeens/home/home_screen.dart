@@ -42,7 +42,7 @@ class HomeScreen extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: size.height,
+            height: size.height/1.5,
             child: GridView.builder(
               physics: const NeverScrollableScrollPhysics(),
               shrinkWrap: true,

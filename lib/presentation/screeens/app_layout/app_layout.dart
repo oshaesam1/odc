@@ -1,5 +1,8 @@
 import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:odc/presentation/screeens/home/home_screen.dart';
+import 'package:odc/presentation/screeens/news/news_screen.dart';
+import 'package:odc/presentation/screeens/settings/settings_screen.dart';
 import 'package:odc/presentation/styles/colors.dart';
 
 class AppLayout extends StatefulWidget {
@@ -11,11 +14,19 @@ class AppLayout extends StatefulWidget {
 
 class _AppLayoutState extends State<AppLayout> {
   int _currentIndex = 0;
+  List<Widget> screens = [
+    HomeScreen(),
+    NewsScreen(),
+    SettingsScreen()
+  ];
+
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: screens[_currentIndex],
         bottomNavigationBar: BottomNavyBar(
+          
       selectedIndex: _currentIndex,
       showElevation: true, // use this to remove appBar's elevation
       onItemSelected: (index) => setState(() {
