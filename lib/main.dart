@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:odc/data/local/cache_helper.dart';
 import 'package:odc/presentation/screeens/splash/splash_screen.dart';
 import 'package:odc/presentation/styles/colors.dart';
 
-void main() {
+void main() async{
+  await  CacheHelper.init();
   runApp(const MyApp());
 }
 
