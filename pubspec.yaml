@@ -39,6 +39,8 @@ dependencies:
   flutter_svg: ^1.1.5
   bottom_navy_bar: ^6.0.0
   syncfusion_flutter_calendar: ^20.2.49
+  snack: ^2.0.0
+
 
 
 dev_dependencies:
